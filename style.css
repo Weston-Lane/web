@@ -20,8 +20,8 @@ div .head-text{
     align-self: flex-end;
 }
 div.top-header a{
-    width:54px;
-    height:54px;
+    width:3em;
+    height:3em;
     padding-right: 5px;
     padding-bottom: 5px;
 }
