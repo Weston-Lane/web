@@ -1,6 +1,7 @@
 html{
     background-color: rgba(238, 234, 229, 0.767);
 }
+
 div.top-header{
     display:flex;
     flex-direction: row;
