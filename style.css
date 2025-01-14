@@ -7,18 +7,25 @@ div.top-header{
     flex-direction: row;
     border-bottom: 10px double grey;
     margin-bottom: 3px;
-    width:50.5%;
+    width: 50.1vw;
     margin: auto;   
 }
 div .head-text-name{
     margin-bottom: 0;
     padding-left: 10px;
     align-self: flex-end;
+    color:#1b1b46;
+    font-weight: bold;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    
 }
 div .head-text{
     margin-bottom: 3px;
     padding-left: 20px;
     align-self: flex-end;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-style:normal;
+    font-size:120%;
 }
 div.top-header a{
     width:3em;
@@ -42,17 +49,6 @@ div.top-header a img{
     width:100%;
     height:100%;
 }
-h1.head-text{
-    color:#1b1b32;
-    font-weight: bold;
-    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
-
-}
-h2.head-text{
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    font-style:normal;
-    font-size:120%;
-}
 body{
     display:block;
 }
@@ -61,7 +57,8 @@ div.links{
     margin:auto;
     background-color: #1b1b32;
     padding:5px;
-    max-width: 50%;
+    width: 49.6vw;
+    border-radius: 3px;
     
 }
 tr.header-links td{
