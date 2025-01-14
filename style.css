@@ -1,7 +1,11 @@
 html{
     background-color: rgba(238, 234, 229, 0.767);
 }
-
+/* @media (max-width: 768px) {
+    table{
+      width:10px;
+    }
+  } */
 div.top-header{
     display:flex;
     flex-direction: row;
@@ -19,6 +23,24 @@ div .head-text-name{
     font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     
 }
+.top-header > #cursor{
+    width:8px;
+    height:20px;
+    background-color: black;
+    align-self:flex-end;
+    margin:5px;
+    position:relative;
+    left:15px;
+    animation: 1.5s blink infinite steps(1, start);
+}
+@keyframes blink {
+    0%, 100% {
+      opacity: 1; /* Fully visible */
+    }
+    50% {
+      opacity: 0; /* Invisible */
+    }
+  }
 div .head-text{
     margin-bottom: 3px;
     padding-left: 20px;
@@ -59,7 +81,7 @@ div.links{
     padding:5px;
     width: 49.6vw;
     border-radius: 3px;
-    
+    background:linear-gradient(#1b1b32 30%, #dfdfe2 100%);
 }
 tr.header-links td{
     font-family:Georgia, 'Times New Roman', Times, serif;
@@ -71,7 +93,7 @@ tr.header-links td{
     border-radius: 3px;
     border-style: groove;
     text-shadow:0 0 10px #ffffff;
-    width:fit-content;
+    
 }
 tr.header-links td > a:hover{
     background-color: #dfdfe2;
@@ -95,4 +117,8 @@ h3 img{
     border:3px groove #1b1b32;
     border-radius: 3px;
     box-shadow: 0 0 20px 0 rgba(5, 5, 5, 0.747);
+}
+div.intro{
+    width:50vw;
+    margin:auto;
 }
