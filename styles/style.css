@@ -93,7 +93,7 @@ div.links{
     background:linear-gradient(#1b1b32 30%, #dfdfe2 100%);
     min-width:520px;
 }
-tr.header-links td{
+tr.header-links td.button{
     font-family:Georgia, 'Times New Roman', Times, serif;
     font-weight: bold;
     border:3px solid rgba(255, 251, 1, 0.747);
@@ -144,10 +144,64 @@ div.intro{
     float:inline-start;
     width:250px;
     border-radius: 10%;
+    clip-path: inset(10px 0 0 0);
     
+}
+#intro-gif3{
+    float:right;
+    width:350px;
+    border-radius: 10%;
+    position:relative;
+    
+   
 }
 .intro-paragraph{
  font-family: 'Courier New', Courier, monospace;
  font-size: large;
  margin:100px
+}
+.intro-paragraph2{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: large;
+    margin-top:200px;
+    margin-left:100px;
+}
+.button{
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-weight: bold;
+    border:3px solid rgba(255, 251, 1, 0.747);
+    padding-left: 2rem;
+    padding-right: 2rem;
+    background-color:#f1be32;
+    border-radius: 3px;
+    border-style: groove;
+    text-shadow:0 0 10px #ffffff;
+    margin:auto;
+}
+.button-bottom{
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-weight: bold;
+    border:3px solid rgba(255, 251, 1, 0.747);
+    background-color:#f1be32;
+    border-radius: 3px;
+    border-style: groove;
+    text-shadow:0 0 10px #ffffff;
+    margin-left:33%;
+    height:100px;
+    font-size: 20px;
+}
+.button-bottom > a:hover{
+    background-color: #dfdfe2;
+    box-shadow: 0 0 4px 0 rgba(255, 251, 1, 0.747);  
+    border-radius: 6px;
+    box-shadow:0 0 8px #ffffff;
+    
+}
+
+.button-bottom > a{
+    display:block;
+    color:#1b1b32;
+    text-decoration: none;
+    position:sticky;
+    
 }
