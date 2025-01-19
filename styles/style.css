@@ -1,0 +1,153 @@
+html{
+    background-color: rgba(238, 234, 229, 0.767);
+    
+}
+/* @media (max-width: 768px) {
+    table{
+      width:10px;
+    }
+  } */
+
+div.top-header{
+    display:flex;
+    flex-direction: row;
+    border-bottom: 10px double grey;
+    margin-bottom: 3px;
+    width: 50.1vw;
+    margin: auto;   
+}
+div .head-text-name{
+    margin-bottom: 0;
+    padding-left: 10px;
+    align-self: flex-end;
+    color:#1b1b46;
+    font-weight: bold;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    
+}
+.top-header{
+    min-width:530px;
+    min-height:100px;
+}
+.top-header > #cursor{
+    width:8px;
+    height:20px;
+    background-color: black;
+    align-self:flex-end;
+    margin:5px;
+    position:relative;
+    left:15px;
+    animation: 1.5s blink infinite steps(1, start);
+}
+@keyframes blink {
+    0%, 100% {
+      opacity: 1; /* Fully visible */
+    }
+    50% {
+      opacity: 0; /* Invisible */
+    }
+  }
+div .head-text{
+    margin-bottom: 3px;
+    padding-left: 20px;
+    align-self: flex-end;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-style:normal;
+    font-size:120%;
+}
+div.top-header a{
+    
+    width:3em;
+    height:3em;
+    padding-right: 5px;
+    padding-bottom: 5px;
+}
+div.top-header a:hover{
+    background-color: #dfdfe2;
+    border-radius: 10px;
+   
+}
+div.top-header #linkedin{
+    margin-left: auto;
+    margin-right: 10px;
+    align-self: flex-end;
+}
+div.top-header #github{
+    align-self:flex-end;
+}
+
+div.top-header a img{
+    border:3px groove grey;
+    border-radius: 10px;
+    width:100%;
+    height:100%;
+}
+
+div.links{
+    justify-items: center;
+    margin:auto;
+    background-color: #1b1b32;
+    padding:5px;
+    width: 49.6vw;
+    border-radius: 3px;
+    background:linear-gradient(#1b1b32 30%, #dfdfe2 100%);
+    min-width:520px;
+}
+tr.header-links td{
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-weight: bold;
+    border:3px solid rgba(255, 251, 1, 0.747);
+    padding-left: 2rem;
+    padding-right: 2rem;
+    background-color:#f1be32;
+    border-radius: 3px;
+    border-style: groove;
+    text-shadow:0 0 10px #ffffff;
+    
+}
+tr.header-links td > a:hover{
+    background-color: #dfdfe2;
+    box-shadow: 0 0 4px 0 rgba(255, 251, 1, 0.747);  
+    border-radius: 6px;
+    box-shadow:0 0 8px #ffffff;  
+}
+
+tr.header-links td > a{
+    display:block;
+    color:#1b1b32;
+    text-decoration: none;
+    position:sticky;
+    
+}
+
+h3{
+   text-align: center; 
+}
+h3 img{
+    border:3px groove #1b1b32;
+    border-radius: 3px;
+    box-shadow: 0 0 20px 0 rgba(5, 5, 5, 0.747);
+}
+div.intro{
+    width:1000px;
+    margin:auto;
+}
+#intro-gif1{
+    float:right;
+    width:250px;
+    border-radius: 10%;
+    position:relative;
+    margin-right:200px;
+   
+}
+#intro-gif2{
+    float:inline-start;
+    width:250px;
+    border-radius: 10%;
+    
+}
+.intro-paragraph{
+ font-family: 'Courier New', Courier, monospace;
+ font-size: large;
+ margin:100px
+}
