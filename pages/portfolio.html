@@ -34,30 +34,69 @@
         </div>
         <div class="intro" id=grid-container>
             <div class="intro item">
-                <p>
-                    row1
+                
+                <p class="item-desc">
+                    Course Planner: This is a course planner I made with C++ and Imgui. I wanted to plan my next few acedemic semseters in a consice, visual way.
+                    <a class="proj-links" target="_blank" href="https://github.com/Weston-Lane/Course-Planner"><img class="right-float proj-gif" src="../images/adding text and other features.gif"></a>
+                    I could have just used Microsoft Excel but why not just make it myself. Continued work will be on including serialization for saving and loading files.
+                    <p class="item-desc inner">Each cell holds a text value while every other column holds the credit amount for that course which is totalled in the bottom left.
+                        There are individual bottons to add or delete rows and columns as needed.
+                    </p>
                 </p>
             </div>
             <div class="intro item">
-                <p>
-                    row2
+                <p class="item-desc">
+                    Software Raytracer: This is a Software Raytracer implemented with C++ and stb library to generate the .jpg file. This project is based off of the awesome 
+                    <a target="_blank" href=https://github.com/ssloy/tinyraytracer/wiki/Part-1:-understandable-raytracing#step-1-write-an-image-to-the-disk" >tinyraytracer</a> tutorial 
+                    on github and is one most interesting projects
+                    <a class="proj-links" target="_blank" href="https://github.com/Weston-Lane/rayTracer-tutorial-"><img class="left-float proj-gif" src="../images/raytracer.gif"></a>I have worked on. I learned about how vectors describe directions and magnitudes in space,
+                    data buffers for redering techniques. Ray-sphere intersection techniques, the Phong reflection model to create realistic speculate and diffuse reflections, and setting
+                    up coordinate spaces for cameras and objects. I still have a lot to learn, However!.
+                    <p class="item-desc">The application is not very user friendly but you can change the position, color, material, and size of the spheres in<br>
+                        <code>int main{}</code>. Then compile and run. An out.jpg file will save in the main directory. 
+                    </p>
                 </p>
             </div>
             <div class="intro item">
-                <p>
-                    row3
+                <p class="item-desc">
+                    Snaek(working title, not a typo): This is snake. You know it, but I added some basic AI you have to dodge while collecting the food. This was made with C++ and the <a target="_blank" href="https://www.raylib.com/">Raylib</a> framework
+                    (an OpenGL wrapper library tailored for making games).<a class="proj-links" target="_blank" href="https://github.com/Weston-Lane/snake-but-bad"><img class="right-float proj-gif" src="../images/snake.gif"></a>
+                    This project consisted of creating a redering API and simple game logic. I wanted to apply some of knowledge I have learned in school in a
+                    fun and interactive way. This was one of the first projects I made and it shows. However, I am still proud of the work I put into it.
+                    <p class="item-desc">Though I consider this project to be complete, I think there is real potential for a game like snake to be combined with bullet hell
+                        mechanics&#x1F914;
+                    </p>
                 </p>
             </div>
             <div class="intro item">
-                <p>
-                    row4
+                <p class="item-desc">
+                    TileMap loading tool: This is a tool I created to import maps made with <a target="_blank" href="https://ldtk.io/">LDtk</a> (tilemap level creator) into my own games.
+                    <a class="proj-links" target="_blank" href="https://github.com/Weston-Lane/LDtk-parser-with-raylib-and-nlohmann-json?tab=readme-ov-file"><img class="left-float proj-gif" src="../images/LDtk level.PNG"></a>
+                    I used the <a target="_blank" href="https://www.raylib.com/">Raylib</a> framework and <a target="_blank" href="https://github.com/nlohmann/json">nlohmann C++ JSON parser.</a> LDtk
+                    exports all level data into a JSON format, the API I made parses the positional data of the tiles and any other attributes (such as collision), then renders them onto screen.
+                    <p class="item-desc"> I wanted to make this tool to help my workflow in loading in my own maps for some lower level game projects I wanted to try. I try to make my own tools
+                        and this is another project in that regard.
+                    </p>
                 </p>
             </div>
             <div class="intro item">
-                <p>
-                    row5
+                <p class="item-desc" id="last">
+                    And lastly, This website! I had to learn and implement HTML, CSS, and some basic JavaScript functionality. I am passionately continuing my studies and projects and
+                    hope for a better more knowlegable future!
+                </p>
+            </div>
+            <div class="intro item">
+                <p class="item-desc" id="last">
+                    <img id="under-construction" src="../images/pngimg.com - under_construction_PNG65.png">
+                    <h4><code>//TODO:</code></h4>
+                    <ul id="TODO">
+                        <li>Make a small game with webGL</li>
+                        <li>Add more interactive portions to this website with WebGL</li>
+                        <li>create own webserver on my rasberry pi</li>
+                    </ul>
                 </p>
             </div>
         </div>
     </body>
+    <script src="../scripts/scripts.js"></script>
 </html>
