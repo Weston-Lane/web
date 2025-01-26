@@ -94,8 +94,7 @@ async function main()
     const sliderValX= x.querySelector('#sliderXVal');
     sliderX.addEventListener('input', ()=>{
       sliderValX.textContent=sliderX.value;
-      translation[0]=sliderX.value-canvas.width/2;
-      console.log(translation[0]);
+      translation[0]=sliderX.value;     
       draw();
     });
 
