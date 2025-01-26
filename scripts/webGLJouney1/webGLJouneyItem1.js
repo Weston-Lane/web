@@ -34,6 +34,8 @@ async function main()
   
   function draw()
   {
+    webglUtils.resizeCanvasToDisplaySize(gl.canvas);
+    gl.viewport(0, 0, gl.canvas.width, gl.canvas.height);
       //loading attributes with data
     //{@link https://developer.mozilla.org/en-US/docs/Web/API/WebGLRenderingContext/vertexAttribPointer JS doc attrib location}
     gl.vertexAttribPointer(positionAttributeLocation, //derived attribute location
@@ -62,7 +64,7 @@ async function main()
   
     // code below this line is rendering code./////////////////////////
     // Tell WebGL how to convert from clip space to pixels
-    resizeCanvasToDisplaySize(canvas);
+    //resizeCanvasToDisplaySize(canvas);
    
     // Clear the canvas
     gl.clearColor(0, 0, 0, 0);

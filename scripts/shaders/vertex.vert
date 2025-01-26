@@ -1,7 +1,7 @@
 
   // an attribute will receive data from a buffer
   attribute vec2 a_position;
-  attribute vec3 vertColor;
+  //attribute vec3 vertColor;
 
   varying vec3 fragColor;
 
@@ -13,7 +13,7 @@
     vec2 position=a_position+u_translation;
     vec2 zeroToOne=position/r;
     vec2 zeroToTwo=zeroToOne * 2.0;
-    vec2 clipSpace=zeroToTwo - 1.0;  
-    fragColor=vertColor;
-    gl_Position = vec4(clipSpace,0,1.0);//a_position;
+    vec2 clipSpace=zeroToTwo - 1.0;
+    fragColor=vec3(a_position,0);
+    gl_Position = vec4(clipSpace * vec2(1,-1),0,1);//a_position;
   }
