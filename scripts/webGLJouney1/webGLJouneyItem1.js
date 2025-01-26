@@ -1,7 +1,3 @@
-
-/*
-
-*/
 var canvas=document.querySelector('#c');
 var gl=canvas.getContext("webgl");
 
@@ -16,9 +12,9 @@ async function main()
   
   var positions = [
       // X,   Y                           R,   G,  B
-      canvas.width/4, canvas.height/4,  1.0, 1.0, 0.0, //left
-    3*canvas.width/4, canvas.height/4,  0.7, 0.0, 1.0, //right
-    canvas.width/2, 3*canvas.height/4,  0.1, 1.0, 0.6  //top
+      canvas.width/3, canvas.height/4,  1.0, 1.0, 0.0, //left
+    2*canvas.width/3, canvas.height/4,  0.7, 0.0, 1.0, //right
+    canvas.width/2, 3*canvas.height/6,  0.1, 1.0, 0.6  //top
   ];
   var translation=[0,0];
   // Create a buffer and put three 2d clip space points in it
@@ -54,7 +50,7 @@ async function main()
         stride=5*Float32Array.BYTES_PER_ELEMENT,
         offset=2*Float32Array.BYTES_PER_ELEMENT);
       console.log(gl.canvas.width);
-    gl.uniform2f(resolutionLocation, gl.canvas.width, gl.canvas.height);
+    gl.uniform2f(resolutionLocation, gl.canvas.width/2, gl.canvas.height/2);
     gl.uniform2fv(translationLocation,translation);
   
     // Turn on the attributes
@@ -67,7 +63,7 @@ async function main()
     // code below this line is rendering code./////////////////////////
     // Tell WebGL how to convert from clip space to pixels
     resizeCanvasToDisplaySize(canvas);
-    
+   
     // Clear the canvas
     gl.clearColor(0, 0, 0, 0);
     gl.clear(gl.COLOR_BUFFER_BIT);
@@ -145,5 +141,3 @@ function setGeometry(gl)
       ]),
       gl.STATIC_DRAW);
 }
-
-

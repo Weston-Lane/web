@@ -1,6 +1,6 @@
 const shaderUrls = [
-    '../scripts/shaders/vertex.vert',
-    '../scripts/shaders/fragment.frag',
+    '../scripts/webGLJouney1/webGLJourney1vertex.vert',
+    '../scripts/webGLJouney1/webGLJourney1fragment.frag',
 ]; 
 function loadTextFile(url) {
     return fetch(url).then(response => response.text());
