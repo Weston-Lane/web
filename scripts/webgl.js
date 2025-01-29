@@ -23,6 +23,8 @@ async function main()
   // ];
   //translation vector
   var translation=[0,0];
+  var rotation=[0,1];
+  var scale=[1,1];
   // Create a buffer and put three 2d clip space points in it
   var positionBuffer = gl.createBuffer();
 
@@ -36,7 +38,8 @@ async function main()
 
   var resolutionLocation=gl.getUniformLocation(program,"u_resolution");
   var translationLocation=gl.getUniformLocation(program,"u_translation");
-  
+  var rotationLocation=gl.getUniformLocation(program, "u_rotation");
+  var scaleLocation=gl.getUniformLocation(program,"u_scale");
   function draw()
   {
     webglUtils.resizeCanvasToDisplaySize(gl.canvas);
@@ -59,7 +62,9 @@ async function main()
 
     gl.uniform2f(resolutionLocation, gl.canvas.width, gl.canvas.height);
     gl.uniform2fv(translationLocation,translation);
-  
+    gl.uniform2fv(rotationLocation, rotation);
+    gl.uniform2fv(scaleLocation,scale);
+
     // Turn on the attributes
     gl.enableVertexAttribArray(positionAttributeLocation);
     //gl.enableVertexAttribArray(colorAttribLocation);
@@ -111,6 +116,35 @@ async function main()
       draw(); 
     });
     
+    const r=document.querySelector('#angle');
+    r.innerHTML=`
+        <input class="slider" id="angle-slider" type="range" min="0" max="360" value="${0}">Angle:</input>
+        <div class="value" id="sliderAngleVal">${0}</div> 
+    `;
+    const sliderAngle=r.querySelector('#angle-slider');
+    const sliderValAngle= r.querySelector('#sliderAngleVal');
+    sliderAngle.addEventListener('input', ()=>{
+      sliderValAngle.textContent=sliderAngle.value;
+      let radians=sliderAngle.value*Math.PI/180;
+      rotation[0]=Math.sin(radians);
+      rotation[1]=Math.cos(radians);
+      draw(); 
+    });
+
+    const s=document.querySelector('#scale');
+    s.innerHTML=`
+        <input class="slider" id="scale-slider" type="range" min="1" max="10" value="${1}">Scale:</input>
+        <div class="value" id="sliderscaleVal">${0}</div> 
+    `;
+    const sliderscale=s.querySelector('#scale-slider');
+    const sliderValscale= s.querySelector('#sliderscaleVal');
+    sliderscale.addEventListener('input', ()=>{
+      sliderValscale.textContent=sliderscale.value;
+      scale[0]=sliderscale.value;
+      scale[1]=sliderscale.value;
+
+      draw(); 
+    });
   }
   draw();
   slider();
