@@ -1,11 +1,12 @@
 body{
-    width:100vw;
-    height:100vw;
+    display:flex;
+
+    justify-content: center;
+    align-items: center;
 }
 #c{
     border: 10px solid black;
-    margin-left:300px;
     width:50%;
-    height:50%;
+    height:30%;
     
 }

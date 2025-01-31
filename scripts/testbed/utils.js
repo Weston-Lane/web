@@ -1,6 +1,6 @@
 const shaderUrls = [
-    '../scripts/shaders/vertex.vert',
-    '../scripts/shaders/fragment.frag',
+    '../scripts/testbed/vertex.vert',
+    '../scripts/testbed/fragment.frag',
 ]; 
 function loadTextFile(url) {
     return fetch(url).then(response => response.text());
@@ -73,5 +73,3 @@ function resizeCanvasToDisplaySize(canvas) {
   
   return needResize;
 }
-
-
