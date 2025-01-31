@@ -1,7 +1,5 @@
 
-  // an attribute will receive data from a buffer
   attribute vec2 a_position;
-  //attribute vec3 vertColor;
 
   varying vec3 fragColor;
 

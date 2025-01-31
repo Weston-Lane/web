@@ -158,8 +158,8 @@ function setGeometry(gl)
           // left column
           0, 0,
           30, 0,
-          0, 150,
-          0, 150,
+          0, 180,
+          0, 180,
           30, 0,
           30, 150,
 
