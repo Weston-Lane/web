@@ -23,6 +23,7 @@ async function main()
   var translate=[250,100];
   var rotation=0;
   var scale=[.75,.75];
+
   function draw()
   {
     webglUtils.resizeCanvasToDisplaySize(gl.canvas);
