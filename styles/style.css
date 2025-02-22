@@ -142,9 +142,10 @@ div.intro{
 }
 #intro-gif2{
     float:inline-start;
-    width:250px;
+    width:300px;
+    height:200px;
     border-radius: 10%;
-    clip-path: inset(10px 0 0 0);
+    /*clip-path: inset(10px 0 0 0);*/
     
 }
 #intro-gif3{
