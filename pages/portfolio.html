@@ -15,7 +15,8 @@
             <span id="cursor"></span>
             <h2 class="head-text">Computer Programmer | Computer Graphics </h2>
             <a id="linkedin" target="_blank" href="https://www.linkedin.com/in/weston-lane-509a67230/"><img src="../images/linkedin.png"></a>
-            <a id="github" target="_blank" href="https://github.com/Weston-Lane"><img id="github" src="../images/github.png"></a>       
+            <a id="github" target="_blank" href="https://github.com/Weston-Lane"><img id="github" src="../images/github.png"></a>
+            <a id="itch" target="_blank" href="https://sparefireboy.itch.io/"><img id="itch" src="../images/itch_logo.png"></a>        
         </div>
         <div class="links">
             <table>
@@ -32,6 +33,7 @@
         <!-- <div class="intro">
             <h3 id="intro-header"><img src="https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExdnQzcTNuOTFpMDVjaTdwejNwNzFuang2M2JqdnJpeGphOTg3NHBvMCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/xTiIzJSKB4l7xTouE8/giphy.webp"></h3>
         </div> -->
+        <h3 id="intro-header">Click the gifs to view any of the projects!</h3>
         <div class="intro" id=grid-container>
             <div class="intro item">
                 <p class="item-desc">
@@ -40,21 +42,20 @@
                     <a class="proj-links" target="_blank" href="https://github.com/Weston-Lane/RayCaster"><img class="left-float proj-gif" src="https://raw.githubusercontent.com/Weston-Lane/RayCaster/main/GitHub%20rsc/raytracer.gif"></a>
                     I wanted to embark on this project to see how classical rendering was done on these games and to give me a foundation
                     in using modern OpenGL.
-                    <p class="item-desc inner">I am using OpenGL with my own abstraction layer for the VBOs, EBOs, VAOs, and Shaders. This project has been an exercise in
+                    <p class="item-desc inner">I am using OpenGL with my own abstraction layer for the OpenGL calls. This project has been an exercise in
                         understanding OpenGL more than anything but I have also learned much more, such as map projection, ray casting, batch rendering, and ray intersection techniques.
-                        Soon I will add textures, enemies, and weapons. I also want to port this to WebGL and get it working on this website.
+                        One day I will add enemies and weapons. I also want to port this to WebGL and get it working on this website.
                     </p>
                 </p>
             </div>
-        <div class="intro" id=grid-container>
             <div class="intro item">
-                
                 <p class="item-desc">
-                    Course Planner: This is a course planner I made with C++ and Imgui. I wanted to plan my next few acedemic semseters in a consice, visual way.
-                    <a class="proj-links" target="_blank" href="https://github.com/Weston-Lane/Course-Planner"><img class="right-float proj-gif" src="../images/adding text and other features.gif"></a>
-                    I could have just used Microsoft Excel but why not just make it myself. Continued work will be on including serialization for saving and loading files.
-                    <p class="item-desc inner">Each cell holds a text value while every other column holds the credit amount for that course which is totalled in the bottom left.
-                        There are individual bottons to add or delete rows and columns as needed.
+                    Snow Mesh Deformation:
+                    <a class="proj-links" target="_blank" href="https://sparefireboy.itch.io/snow-deformation-shader"><img class="right-float proj-gif" src="/images/SnowMesh.gif"></a>
+                    This is a deformation shader I created with Unity for realistic snow deformation. 
+                    <p class="item-desc inner">I set up a scene to demostrate the deformation. I used the depth buffer and an orthographic camera to collect the
+                        depth values each frame and distort the vertex's y position accordingly. I also used gouraud shading to properly color the snow based on the
+                        rotation of the global light source. Check it out on my itch.io page! =======>
                     </p>
                 </p>
             </div>
@@ -73,8 +74,17 @@
             </div>
             <div class="intro item">
                 <p class="item-desc">
+                    Chicken Run: This is a browser based game I made with Unity. It was the final project for the <a target = "_blank" href = "https://learn.unity.com/">Unity learn</a> junior programmer series.
+                    <br><a class="proj-links" target="_blank" href="https://weston-lane.github.io/web/unity/Chicken_Run/"><img class="right-float proj-gif" src="../images/ChickenRun.gif"></a>
+                    <h4><code>TRY IT OUT ON THIS WEBSITE! =======></code></h4>
+                    <p class="item-desc">
+                    </p>
+                </p>
+            </div>
+            <div class="intro item">
+                <p class="item-desc">
                     Snaek(that's the title, not a typo): This is snake. You know it, but I added some basic AI you have to dodge while collecting the food. This was made with C++ and the <a target="_blank" href="https://www.raylib.com/">Raylib</a> framework
-                    (an OpenGL wrapper library tailored for making games).<a class="proj-links" target="_blank" href="https://github.com/Weston-Lane/snake-but-bad"><img class="right-float proj-gif" src="../images/snake.gif"></a>
+                    (an OpenGL wrapper library tailored for making games).<a class="proj-links" target="_blank" href="https://github.com/Weston-Lane/snake-but-bad"><img class="left-float proj-gif" src="../images/snake.gif"></a>
                     This project consisted of creating a redering API and simple game logic. I wanted to apply some of knowledge I have learned in school in a
                     fun and interactive way. This was one of the first projects I made and it shows. However, I am still proud of the work I put into it.
                     <p class="item-desc">Though I consider this project to be complete, I think there is real potential for a game like snake to be combined with bullet hell
@@ -85,11 +95,21 @@
             <div class="intro item">
                 <p class="item-desc">
                     TileMap loading tool: This is a tool I created to import maps made with <a target="_blank" href="https://ldtk.io/">LDtk</a> (tilemap level creator) into my own games.
-                    <a class="proj-links" target="_blank" href="https://github.com/Weston-Lane/LDtk-parser-with-raylib-and-nlohmann-json?tab=readme-ov-file"><img class="left-float proj-gif" src="../images/LDtk level.PNG"></a>
+                    <a class="proj-links" target="_blank" href="https://github.com/Weston-Lane/LDtk-parser-with-raylib-and-nlohmann-json?tab=readme-ov-file"><img class="right-float proj-gif" src="../images/LDtk level.PNG"></a>
                     I used the <a target="_blank" href="https://www.raylib.com/">Raylib</a> framework and <a target="_blank" href="https://github.com/nlohmann/json">nlohmann C++ JSON parser.</a> LDtk
                     exports all level data into a JSON format, the API I made parses the positional data of the tiles and any other attributes (such as collision), then renders them onto screen.
                     <p class="item-desc"> I wanted to make this tool to help my workflow in loading in my own maps for some lower level game projects I wanted to try. I try to make my own tools
                         and this is another project in that regard.
+                    </p>
+                </p>
+            </div>
+            <div class="intro item">
+                <p class="item-desc">
+                    Course Planner: This is a course planner I made with C++ and Imgui. I wanted to plan my next few acedemic semseters in a consice, visual way.
+                    <a class="proj-links" target="_blank" href="https://github.com/Weston-Lane/Course-Planner"><img class="left-float proj-gif" src="../images/adding text and other features.gif"></a>
+                    I could have just used Microsoft Excel but why not just make it myself. Continued work will be on including serialization for saving and loading files.
+                    <p class="item-desc inner">Each cell holds a text value while every other column holds the credit amount for that course which is totalled in the bottom left.
+                        There are individual bottons to add or delete rows and columns as needed.
                     </p>
                 </p>
             </div>
@@ -104,7 +124,7 @@
                     <a href="webgl.html" target="_blank"><img id="under-construction" src="../images/pngimg.com - under_construction_PNG65.png"></a>
                     <h4><code>//TODO:</code></h4>
                     <ul id="TODO">
-                        <li>Make a small game with webGL</li>
+                        <li>Try out Unreal</li>
                         <li>Add more interactive portions to this website</li>
                         <li>create own webserver on my rasberry pi</li>
                     </ul>

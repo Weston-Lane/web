@@ -57,7 +57,7 @@ div .head-text{
 }
 div.top-header a{
     
-    width:3em;
+    width:2em;
     height:3em;
     padding-right: 5px;
     padding-bottom: 5px;
@@ -73,6 +73,10 @@ div.top-header #linkedin{
     align-self: flex-end;
 }
 div.top-header #github{
+    margin-right: 10px;
+    align-self:flex-end;
+}
+div.top-header #itch{
     align-self:flex-end;
 }
 
